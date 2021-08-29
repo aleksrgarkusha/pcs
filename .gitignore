@@ -1,0 +1,17 @@
+*~
+*.o
+*.orig
+*.txt.user*
+.DS_Store
+.idea
+.vscode
+.ipynb_checkpoints
+*.so
+*.a
+*.dll
+*.bin
+build*
+cmake-build*
+Makefile
+.directory
+builded_package
