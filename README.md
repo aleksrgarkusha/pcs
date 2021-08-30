@@ -1,6 +1,8 @@
 
 # PCS (Point Cloud Segmentation Library)
 
+![Linux Build Status](https://github.com/aleksrgarkusha/pcs/actions/workflows/cmake.yml/badge.svg)
+
 C++ library for semantic segmentation of large scale point clouds with python wrappers
 
 The unofficial implementaion of the paper:  
