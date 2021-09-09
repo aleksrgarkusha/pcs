@@ -19,9 +19,9 @@ Eigen::Matrix<typename Eigen::DenseBase<Derived>::Scalar, 3, 1> hsv_to_rgb(
   Eigen::Matrix<T, 3, 1> rgb;
 
   if (s == 0) {
-    rgb.x() = std::floor(v * 255);
-    rgb.y() = std::floor(v * 255);
-    rgb.z() = std::floor(v * 255);
+    rgb.x() = std::round(v * 255);
+    rgb.y() = std::round(v * 255);
+    rgb.z() = std::round(v * 255);
     return rgb;
   }
 
@@ -38,35 +38,35 @@ Eigen::Matrix<typename Eigen::DenseBase<Derived>::Scalar, 3, 1> hsv_to_rgb(
 
   switch (i) {
     case 0:
-      rgb.x() = std::floor(v * 255);
-      rgb.y() = std::floor(t * 255);
-      rgb.z() = std::floor(p * 255);
+      rgb.x() = std::round(v * 255);
+      rgb.y() = std::round(t * 255);
+      rgb.z() = std::round(p * 255);
       break;
     case 1:
-      rgb.x() = std::floor(q * 255);
-      rgb.y() = std::floor(v * 255);
-      rgb.z() = std::floor(p * 255);
+      rgb.x() = std::round(q * 255);
+      rgb.y() = std::round(v * 255);
+      rgb.z() = std::round(p * 255);
       break;
     case 2:
-      rgb.x() = std::floor(p * 255);
-      rgb.y() = std::floor(v * 255);
-      rgb.z() = std::floor(t * 255);
+      rgb.x() = std::round(p * 255);
+      rgb.y() = std::round(v * 255);
+      rgb.z() = std::round(t * 255);
       break;
     case 3:
-      rgb.x() = std::floor(p * 255);
-      rgb.y() = std::floor(q * 255);
-      rgb.z() = std::floor(v * 255);
+      rgb.x() = std::round(p * 255);
+      rgb.y() = std::round(q * 255);
+      rgb.z() = std::round(v * 255);
       break;
     case 4:
-      rgb.x() = std::floor(t * 255);
-      rgb.y() = std::floor(p * 255);
-      rgb.z() = std::floor(v * 255);
+      rgb.x() = std::round(t * 255);
+      rgb.y() = std::round(p * 255);
+      rgb.z() = std::round(v * 255);
       break;
     case 5:
     default:
-      rgb.x() = std::floor(v * 255);
-      rgb.y() = std::floor(p * 255);
-      rgb.z() = std::floor(q * 255);
+      rgb.x() = std::round(v * 255);
+      rgb.y() = std::round(p * 255);
+      rgb.z() = std::round(q * 255);
       break;
   }
 

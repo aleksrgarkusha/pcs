@@ -29,7 +29,7 @@ cd pcs
 python3 setup.py build_ext --inplace
 ```
 
-After building is finished you can launch `jupyter notebook` from current folder and run `point_cloud_segmentation.ipynb` script for example of libray usage
+After building is finished you can launch `jupyter notebook` from current folder and run `point_cloud_segmentation.ipynb` script for example of library usage
 
 ## Citation 
 ```

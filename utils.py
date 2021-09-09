@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import sys
+import pypcs
 import shutil
 import urllib.request
 
@@ -61,7 +62,7 @@ def estimate_ious(true, predicted, n_classes):
     return mean_iou, iou_list
 
 
-def load_point_cloud(filename, point_cloud, use_colors=True):
+def load_point_cloud(filename, use_colors=True):
     """Load point cloud and labels for given dataset
     Parameters
     ----------
@@ -77,7 +78,7 @@ def load_point_cloud(filename, point_cloud, use_colors=True):
     (point_cloud, labels) : tuple
         Loaded point cloud and class labels
     """
-    point_cloud.clear()
+    point_cloud = pypcs.PointCloud()
     labels = []
     with open(filename, "r") as f:
         lines = f.readlines()
